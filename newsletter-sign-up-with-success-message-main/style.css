@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria;
+}
+body{
+    background: #eaeaea;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: white;
+    width: 800px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content1{
+    flex: 1;
+    padding-right: 40px;
+    position: relative;
+}
+.content1 h1{
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content1 p{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.content1 ul li{
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    margin: 10px 0;
+}
+.content1 ul li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url("assets/images/checked.png");
+    position: absolute;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+}
+.email-div{
+    margin-top: 40px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.email-div p{
+    position: relative;
+    bottom: 10px;
+}
+input{
+    padding: 8px 20px;
+    font-size: 19px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #eaeaea;
+    position: relative;
+    bottom: 10px;
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgb(255, 89, 0);
+    color: white;
+    transition: all .4s;
+}
+button:hover{
+    background: black;
+}
+.wrong{
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    animation: shake .3s linear;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+label{
+    color: red;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+}
+.popup{
+    display: none;
+    width: 400px;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+.popup img{
+    position: relative;
+    top: -90px;
+}
+.popup h1{
+    position: relative;
+    top: -60px;
+}
+.popup p{
+    position: relative;
+    top: -40px;
+    font-size: 16px;
+}
+.popup button{
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        flex-direction: column-reverse;
+        width: 400px;
+    }
+    .content1 h1{
+        margin-top: 20px;
+        text-align: center;
+    }
+}

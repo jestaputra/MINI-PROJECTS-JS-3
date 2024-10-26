@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="popup" >
+    <img src="assets/images/checked.png" alt="">
+    <h1>Thankyou for Subscribing</h1>
+    <p>A confirmation email has been seen to loremCece@gmail.com. Please open it and click the button inside to confirm this massage</p>
+    <button id="confirm">Confirm</button>
+  </div>
+    <div class="container">
+      <div class="content1" id="content-1">
+        <h1>Stay Update!</h1>
+        <p>Join 60.000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more</li>
+        </ul>
+        <div class="email-div">
+          <p>email address: </p>
+          <!-- <label>*your email invalid</label> -->
+          <input id="inputBox" type="email" placeholder="Enter your Email">
+          <button type="submit" onclick="checkEmail()">Subscribe to monthly Newsletter</button>
+        </div>
+      </div>
+      <div class="content2">
+        <img src="assets/images/background.jpg" alt="" width="300px">
+      </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
